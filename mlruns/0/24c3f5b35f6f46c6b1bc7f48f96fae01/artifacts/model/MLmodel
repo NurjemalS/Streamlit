@@ -1,0 +1,20 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.9.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 1.27.0
+model_uuid: d26c7f51ea38461ea11c9ebc698ab020
+run_id: 24c3f5b35f6f46c6b1bc7f48f96fae01
+signature:
+  inputs: '[{"name": "bathrooms", "type": "double"}, {"name": "bedrooms", "type":
+    "double"}, {"name": "waterfront", "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-07-07 10:00:29.088433'

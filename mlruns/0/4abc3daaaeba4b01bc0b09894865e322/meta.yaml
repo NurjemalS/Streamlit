@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/nurjemal/Desktop/invent/s/mlruns/0/4abc3daaaeba4b01bc0b09894865e322/artifacts
+end_time: 1657111868342
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 4abc3daaaeba4b01bc0b09894865e322
+run_uuid: 4abc3daaaeba4b01bc0b09894865e322
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1657111865896
+status: 3
+tags: []
+user_id: nurjemal

@@ -23,12 +23,6 @@ class BaseModel(ABC):
         Abstract base method that trains the forecasting model.
         Should return the model instance
 
-        :param train_x_df: train features dataframe 
-        :type train_x_df: pd.DataFrame
-        :param train_y_df: train target dataframe 
-        :type train_y_df: pd.DataFrame
-        :return: trained model instance
-        :rtype: Any
         """
 
     @abstractmethod

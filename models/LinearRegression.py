@@ -30,6 +30,52 @@ class LinearRegression(BaseModel):
     
     def predict(self, model, test_df: pd.DataFrame) -> pd.DataFrame:
         return model.predict(test_df)
+
+    
+    def get_options():
+        return {
+           "max_depth" : {
+               "label" : "max_depth",
+               "value" : 20,
+               "min_value" : 10,
+               "max_value" : 100,
+               "step": 10,
+               "type" : "slider"
+           },
+           "ccp_alpha" :{
+               "label" : "ccp_alpha",
+               "value" : 0.02,
+               "min_value" : 0.01,
+               "max_value" : 0.1,
+               "step": 0.01,
+               "type" : "slider"
+           },
+           "n_estimators" :{
+                "label" : "n_estimators",
+                "value" : [50, 100, 150, 200, 250, 'No limit'],
+                "type" : "selectbox"
+           },
+           "random_state" :{
+                "label" : "random_state",
+                "value" : [50, 100, 150, 200, 250, 'No limit'],
+                "type" : "selectbox"
+           },
+           "criterion" :{
+                "label" : "criterion",
+                "value" : ["squared_error", "absolute_error", "poisson"],
+                "type" : "selectbox"
+           },
+           "bootstrap" : {
+                "label" : "bootstrap",
+                "value" : [True, False],
+                "type" : "selectbox"
+           }, 
+           "n_jobs" :{
+                "label" : "n_jobs",
+                "value" : [10, 20, 30, 40, 50, 'None'],
+                "type" : "selectbox"
+           }
+        }
     
    
         
